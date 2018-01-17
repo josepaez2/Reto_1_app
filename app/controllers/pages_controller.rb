@@ -3,14 +3,14 @@ class PagesController < ApplicationController
 
   end
 
-  def static_page_1
+  def basics
   	
   end
 
-  def static_page_2
+  def ruby
   	
   end
-  def static_page_3
+  def git
   	
   end
 end
