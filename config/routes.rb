@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
   # resources :pages
-  get '/ruby', to: 'pages#static_page_1', as: "Static_Page_1"
-  get '/git', to: 'pages#static_page_2', as: "Static_Page_2"
-  get '/git', to: 'pages#static_page_3', as: "Static_Page_3"
+  get '/static_page_1', to: 'pages#static_page_1', as: "static_page_1"
+  get '/static_page_2', to: 'pages#static_page_2', as: "static_page_2"
+  get '/static_page_3', to: 'pages#static_page_3', as: "static_page_3"
 end
