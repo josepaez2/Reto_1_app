@@ -1,0 +1,68 @@
+<h1>Resources</h1>
+
+	<p> A Resource is a data model along with a web interface to that model, making it possible to manipulate the objects representing that data model, so if your model is a user, then a user can be created, read, updated, and deleted through the web via the HTTP protocol.</p>
+
+	<p>In other words, you can do the respective RESTful actions with the resource meaning you must be able to index a list of all the instances of the resource, show an individual instance of the resource, make a new resource in first in memory and then create it in the database, show a page to edit a instance of a resource, update in the database the resource, delete the instance of the resource</p>
+
+	<p>RESTful routing is a way of creating your applications routes by following the RESTful convention based around the idea of Resources and the golden seven actions.</p>
+	<p>So there are 7 basic actions of this philosophy.</p>
+	<p>These are index, show, new, create, edit, update and destroy.</p>
+	<p>The actions and their respective HTTP verbs are shown in the following table:</p>
+
+<th></th>
+<table >
+  <tr>
+    <th>HTTP request</th>
+    <th>URL</th> 
+    <th>Action</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users</td> 
+    <td>&nbsp&nbspindex</td>
+    <td>&nbsp&nbsp&nbsp&nbsppage to list all users</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users/1</td> 
+    <td>&nbsp&nbspshow</td>
+    <td>&nbsp&nbsp&nbsp&nbsppage to show user with id 1</td>
+  </tr>
+    <tr>
+    <td>GET</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users/new</td> 
+    <td>&nbsp&nbspnew</td>
+    <td>&nbsp&nbsp&nbsp&nbsppage to make a new user</td>
+  </tr>
+    <tr>
+    <td>POST</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users</td> 
+    <td>&nbsp&nbspcreate</td>
+    <td>&nbsp&nbsp&nbsp&nbspcreate a new user</td>
+  </tr>
+    <tr>
+    <td>GET</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users/1/edit</td> 
+    <td>&nbsp&nbspedit</td>
+    <td>&nbsp&nbsp&nbsp&nbsppage to edit user with id 1</td>
+  </tr>
+    <tr>
+    <td>PATCH</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users/1/</td> 
+    <td>&nbsp&nbspupdate</td>
+    <td>&nbsp&nbsp&nbsp&nbspupdate user with id 1</td>
+  </tr>
+    <tr>
+    <td>DELETE</td>
+    <td>&nbsp&nbsp&nbsp&nbsp/users/1/</td> 
+    <td>&nbsp&nbspdestroy</td>
+    <td>&nbsp&nbsp&nbsp&nbspdelete user with id 1</td>
+  </tr>
+</table>
+<br><br>
+		<%= link_to "Home", root_path %>
+
+
+
+
