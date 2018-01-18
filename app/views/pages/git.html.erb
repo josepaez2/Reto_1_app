@@ -51,4 +51,58 @@
 			</p>
 		</strong>
 		<br>
+
+<h1>Setting the origin of a remote repository to avoid having to write it down everytime a push or a pull is done</h1>
+		<p>When you want to set a remote repository, by convention as origin, you use the command:</p>
+		<strong>
+			<p>
+				git remote add origin [url_of_repository]
+			</p>
+		</strong>
+<h1>Difference between reset and revert</h1>
+		<strong>
+			<p>
+				git revert
+			</p>
+		</strong>
+		<p>This command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project (it doesn't modify existing history).</p>
+		<strong>
+			<p>
+				git reset
+			</p>
+		</strong>
+		<p>This command is a little more complicated. It actually does a couple of different things depending on how it is invoked. It modifies the index (the so-called "staging area"). Or it changes which commit a branch head is currently pointing at. This command may alter existing history (by changing the commit that a branch references).</p>
+		<strong>
+			<p>
+				Conclusion
+			</p>
+		</strong>
+		<p>If a commit has been made somewhere in the project's history, and you later decide that the commit is wrong and should not have been done, then git revert is the tool for the job. It will undo the changes introduced by the bad commit, recording the "undo" in the history.</p>
+
+		<p>If you have made a commit, but haven't shared it with anyone else and you decide you don't want it, then you can use git reset to rewrite the history so that it looks as though you never made that commit.</p>
+		<br>
+<h1>Besides switching branches what is the command git checkout used for</h1>
+		<strong>
+			<p>
+				git checkout
+			</p>
+		</strong>
+		<p>This command allows you to switch branches, sometimes while creating a new branch by adding the branch flag -b. It also allows you to restore working file trees</p>
+<h1>How are you able to see the commits that have been done to the project</h1>
+		<strong>
+			<p>
+				git log
+			</p>
+		</strong>
+		<p>This command allows you see the commits in the project, also with the author, message, name and date of the commit</p>
+<h1>Having modified 2 files, how do you commit each one seperately</h1>
+		<strong>
+			<p>git add [file A] # add [file A] to staging area</p>
+			<p>git commit [file A]</p>
+			<p>git add [file B] # add [file B] to staging area</p>
+			<p>git commit [file B]</p>
+
+		</strong>
+		<p>This commands allow you commit changes on files seperately.</p>
+
 		<%= link_to "Home", root_path %>
